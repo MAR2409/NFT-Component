@@ -39,7 +39,7 @@ body {
   height: 304px;
   top: 136px;
   opacity: 0;
-  background-color: hsla(178, 100%, 50%, 0.4);
+  background-color: hsla(178, 100%, 50%, 0.5);
   border-radius: 10px;
 }
 .center-container .nft-card .nft-content .eye-absolute img {
