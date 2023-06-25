@@ -1,0 +1,151 @@
+:root {
+    --font-family:'Outfit', sans-serif;
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    --veryDarkBlueMain:hsl(217, 54%, 11%);
+    --veryDarkBlueCardBg:hsl(216, 50%, 16%);
+    --veryDarkBlueLine:hsl(215, 32%, 27%);
+    --White:hsl(0, 0%, 100%);
+}
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+    font-size: 18px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: var(--veryDarkBlueMain);
+}
+
+.card-body {
+    width: 300px;
+    height: 530px;
+    background-color: var(--veryDarkBlueCardBg);
+    margin-top:25px;
+    border-radius: 15px;
+}
+
+.card-content {
+    padding: 25px;
+}
+
+.card-content img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+
+.card-text h2 {
+    color: var(--White);
+    margin-top: 1.25rem;
+    font-size: 20px;
+}
+
+.card-text h2:hover {
+    color: var(--Cyan);
+    cursor: pointer;
+}
+
+.card-text p {
+    color: var(--Soft-blue);
+    margin: 1.25rem 0rem;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.flex-nft-content {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid white;
+    padding-bottom: 15px;
+}
+
+.flex-info {
+    display: flex;
+    width: 50%;
+}
+
+.flex-info img {
+    width: 12px;
+    height: 20px;
+}
+
+.flex-info p {
+    padding-left:10px;
+    color: var(--Cyan);
+    font-size: 13px;
+}
+
+.flex-time {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    width: 50%;
+}
+.flex-time p {
+    color: var(--Soft-blue);
+    font-weight: 300;
+    font-size: 13px;
+    padding-left: .55rem;
+}
+
+.flex-time img {
+    width: 18px;
+    height: 20px;
+}
+
+.flex-creator {
+    display: flex;
+    margin-top: 1.2rem;
+    align-items: center;
+}
+
+.flex-creator img {
+    width: 35px;
+    height: 35px;
+    border: 1px solid white;
+    border-radius: 50px;
+}
+
+.flex-creator p {
+    font-size: 15px;
+    padding-left: 10px;
+    color: var(--Soft-blue);
+}
+
+.span {
+    color: var(--White);
+    font-size:15px;
+}
+
+.span:hover{
+    color: var(--Cyan);
+    cursor: pointer;
+}
+
+.img-blue {
+    position: absolute;
+    top: 5%;
+    width: 250px;
+    height: 251px;
+    background-color: hsl(178, 100%, 50%, 40%);
+    opacity: 0;
+    border-radius: 5px;
+}
+
+.img-blue img {
+    width: 50px;
+    position: absolute;
+    top: 40%;
+    right: 40%;
+}
+
+.img-blue:hover {
+    opacity: 1;
+    cursor: pointer;
+}
