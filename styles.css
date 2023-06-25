@@ -14,11 +14,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 800px;
 }
 .center-container .nft-card {
   width: 350px;
-  height: 550px;
+  height: 575px;
   background-color: hsl(216, 50%, 16%);
   border-radius: 13px;
 }
@@ -33,10 +33,33 @@ body {
   width: 100%;
   border-radius: 10px;
 }
+.center-container .nft-card .nft-content .eye-absolute {
+  position: absolute;
+  width: 303.22px;
+  height: 304px;
+  top: 136px;
+  opacity: 0;
+  background-color: hsla(178, 100%, 50%, 0.4);
+  border-radius: 10px;
+}
+.center-container .nft-card .nft-content .eye-absolute img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.center-container .nft-card .nft-content .eye-absolute:hover {
+  opacity: 1;
+  cursor: pointer;
+}
 .center-container .nft-card .nft-content .text h2 {
   color: white;
   font-size: 22px;
   margin: 0.85rem 0;
+}
+.center-container .nft-card .nft-content .text h2:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
 }
 .center-container .nft-card .nft-content .text p {
   color: hsl(215, 51%, 70%);
@@ -64,4 +87,25 @@ body {
 }
 .center-container .nft-card .nft-content .nft-flex .flex-group2 img {
   width: 20px;
+}
+.center-container .nft-card .nft-content .jules-creator {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  margin: 0.85rem 0;
+  color: hsl(215, 51%, 70%);
+}
+.center-container .nft-card .nft-content .jules-creator img {
+  width: 40px;
+  border: 1px solid white;
+  border-radius: 50px;
+}
+.center-container .nft-card .nft-content .jules-creator .white-text {
+  color: white;
+  text-transform: capitalize;
+}
+.center-container .nft-card .nft-content .jules-creator .white-text:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
 }/*# sourceMappingURL=styles.css.map */
