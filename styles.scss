@@ -23,17 +23,18 @@ $dark-line: hsl(215, 32%, 27%);
 body {
   background-color: $dark-main;
 }
+
 //CARD
 
 .center-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 800px;
 
   .nft-card {
     width: 350px;
-    height: 550px;
+    height: 575px;
     background-color: $dark-card;
     border-radius: 13px;
 
@@ -52,6 +53,27 @@ body {
         }
       }
 
+      .eye-absolute {
+        position: absolute;
+        width: 303.22px;
+        height: 304px;
+        top: 136px;
+        opacity: 0;
+        background-color: hsl(178, 100%, 50%, 40%);
+        border-radius: 10px;
+        img {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+
+      .eye-absolute:hover {
+        opacity: 1;
+        cursor: pointer;
+      }
+
       //TEXT
 
       .text {
@@ -59,6 +81,11 @@ body {
           color: $white;
           font-size: 22px;
           margin: 0.85rem 0;
+        }
+
+        h2:hover {
+          color: $cyan;
+          cursor: pointer;
         }
 
         p {
@@ -97,6 +124,30 @@ body {
           img {
             width: 20px;
           }
+        }
+      }
+
+      .jules-creator {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        width: 100%;
+        margin: 0.85rem 0;
+        color: $soft-blue;
+        img {
+          width: 40px;
+          border: 1px solid white;
+          border-radius: 50px;
+        }
+
+        .white-text {
+          color: $white;
+          text-transform: capitalize;
+        }
+
+        .white-text:hover {
+          color: $cyan;
+          cursor: pointer;
         }
       }
     }
